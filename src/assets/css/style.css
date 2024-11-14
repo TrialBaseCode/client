@@ -3,3 +3,16 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* ------grid item---------- */
+.itemgridcontainer .MuiGrid2-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------layout setup------ */
+.layoutContainer {
+    margin: 0 auto;
+    max-width: 95%;
+}

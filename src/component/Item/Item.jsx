@@ -1,30 +1,23 @@
-import Grid from "@mui/material/Grid2";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 import SubItem from "../SubItem/SubItem";
+
 function Item() {
   return (
     <>
-      <div className="cardGrid">
-        <h1>Menu</h1>
-        <div className="cardGrid">
-          <Grid container spacing={2}>
-            <Grid size={3}>
-              <SubItem />
-            </Grid>
-            <Grid size={3}>
-              <SubItem />
-            </Grid>
-            <Grid size={3}>
-              <SubItem />
-            </Grid>
-            <Grid size={3}>
-              <SubItem />
-            </Grid>
-            <Grid size={12}>
-              <SubItem />
-            </Grid>
-          </Grid>
-        </div>
-      </div>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+        <SubItem />
+      </Card>
     </>
   );
 }
