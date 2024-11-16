@@ -10,19 +10,14 @@ function Menu() {
   const [menuItem, setMenuItem] = useState([]);
   const [restaurantNameList, setRestaurantNameList] = useState([]);
   const [name, setName] = useState("");
-  const [menu, setMenu] = useState([]);
 
   async function getAllMenuItems() {
     const response = await ListofItem();
-    const restaurantList = [];
     const menuItemList = await response.menu;
     // console.log(menuItemList);
 
-    menuItemList.map((curr, index) => {
-      const nameList = curr.restaurant.name;
-      // console.log(nameList);
-      restaurantList.push(nameList);
-    });
+    //get the name for
+    const restaurantList = getTheName(menuItemList);
 
     //for list to get
 
@@ -31,24 +26,27 @@ function Menu() {
     });
 
     setRestaurantNameList(restaurantList);
-
     setMenuItem(menuItemList);
+  }
+
+  function getTheName(menuItemList) {
+    const restaurantList = [];
+    menuItemList.map((curr, index) => {
+      const nameList = curr.restaurant.name;
+      // console.log(nameList);
+      restaurantList.push(nameList);
+    });
+
+    return restaurantList;
   }
 
   const handleChange = (event) => {
     setName(event.target.value);
   };
 
-  function checkRestaraunt(curr) {
-    // console.log(curr.restaurant.name);
-    if (name === curr.restaurant.name) {
-      console.log(name);
-    }
-  }
-
   useEffect(() => {
     getAllMenuItems();
-  }, [0]);
+  }, []);
 
   return (
     <>
@@ -56,7 +54,12 @@ function Menu() {
         {/* {console.log(restaurantNameList)} */}
         <div className="selectContain">
           <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">Name</InputLabel>
+            <InputLabel
+              id="demo-simple-select-label"
+              className="inputSelectfield"
+            >
+              Name
+            </InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
@@ -75,7 +78,7 @@ function Menu() {
           </FormControl>
         </div>
         <div className="restaurant-contain">
-          <Grid name={name} />
+          <Grid name={name} menuItem={menuItem} />
         </div>
       </section>
     </>

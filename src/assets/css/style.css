@@ -16,3 +16,32 @@
     margin: 0 auto;
     max-width: 95%;
 }
+
+.selectContain label {
+    color: #fff;
+}
+
+.selectContain .css-113d811-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #ffffff;
+}
+
+.selectContain div#demo-simple-select {
+    color: #1e54ff;
+}
+
+.selectContain .css-1ll44ll-MuiOutlinedInput-notchedOutline {
+    border-color: rgb(255 255 255);
+}
+
+.selectContain svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.css-lohd6h-MuiSvgIcon-root-MuiSelect-icon {
+    color: #fff;
+    font-size: 43px;
+}
+
+.restaurant-contain .itemgridcontainer .MuiGrid2-root {
+    align-items: normal;
+}
+
+.content-container {
+    height: 100vh;
+}

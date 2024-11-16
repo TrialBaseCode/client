@@ -1,0 +1,341 @@
+{
+    "menu": [
+        {
+            "id": 102,
+            "created_at": "2024-11-14T01:04:52.846856",
+            "updated_at": "2024-11-14T01:04:52.847822",
+            "restaurant": {
+                "id": 1,
+                "created_at": "2024-11-14T00:02:11.440603",
+                "updated_at": "2024-11-14T00:02:11.440603",
+                "name": "La Bella Italia",
+                "address": "456 Italian St",
+                "phone": "111-222-3333",
+                "email": "contact@labellaitalia.com",
+                "description": "Authentic Italian cuisine",
+                "image": "labella.jpg",
+                "totalTables": 15,
+                "tables": [],
+                "restaurantStatus": null,
+                "users": []
+            },
+            "item": [
+                {
+                    "id": 1,
+                    "created_at": "2024-11-14T00:16:22.18244",
+                    "updated_at": "2024-11-14T01:04:52.86082",
+                    "title": "Margherita Pizza",
+                    "itemType": "NONVEG",
+                    "subItems": [
+                        {
+                            "id": 1,
+                            "created_at": "2024-11-14T00:19:06.367293",
+                            "updated_at": "2024-11-14T00:19:06.367293",
+                            "name": "Extra Mozzarella",
+                            "price": 50,
+                            "quantity": 1,
+                            "description": "Add more mozzarella cheese",
+                            "image": "mozzarella.jpg"
+                        }
+                    ],
+                    "order": null
+                },
+                {
+                    "id": 2,
+                    "created_at": "2024-11-14T00:16:52.283325",
+                    "updated_at": "2024-11-14T01:04:52.866819",
+                    "title": "Pasta Carbonara",
+                    "itemType": "VEG",
+                    "subItems": [
+                        {
+                            "id": 2,
+                            "created_at": "2024-11-14T00:21:21.359369",
+                            "updated_at": "2024-11-14T00:21:21.359369",
+                            "name": "Garlic Bread",
+                            "price": 40,
+                            "quantity": 1,
+                            "description": "Served with garlic butter",
+                            "image": "garlic_bread.jpg"
+                        }
+                    ],
+                    "order": null
+                }
+            ],
+            "users": []
+        },
+        {
+            "id": 152,
+            "created_at": "2024-11-14T01:29:31.592534",
+            "updated_at": "2024-11-14T01:29:31.592534",
+            "restaurant": {
+                "id": 2,
+                "created_at": "2024-11-14T01:17:38.816487",
+                "updated_at": "2024-11-14T01:17:38.816487",
+                "name": "Casa Mexicana",
+                "address": "789 Fiesta Ave",
+                "phone": "222-333-4444",
+                "email": "info@casamexicana.com",
+                "description": "Traditional Mexican flavors",
+                "image": "casamexicana.jpg",
+                "totalTables": 12,
+                "tables": [],
+                "restaurantStatus": null,
+                "users": []
+            },
+            "item": [
+                {
+                    "id": 52,
+                    "created_at": "2024-11-14T01:19:27.964404",
+                    "updated_at": "2024-11-14T01:29:31.593497",
+                    "title": "Tacos",
+                    "itemType": "VEG",
+                    "subItems": [
+                        {
+                            "id": 52,
+                            "created_at": "2024-11-14T01:23:45.50803",
+                            "updated_at": "2024-11-14T01:23:45.50803",
+                            "name": "Guacamole",
+                            "price": 30,
+                            "quantity": 1,
+                            "description": "Freshly made guacamole",
+                            "image": "guacamole.jpg"
+                        },
+                        {
+                            "id": 53,
+                            "created_at": "2024-11-14T01:24:21.810381",
+                            "updated_at": "2024-11-14T01:24:21.810381",
+                            "name": "Sour Cream",
+                            "price": 20,
+                            "quantity": 1,
+                            "description": "Creamy and tangy",
+                            "image": "sour_cream.jpg"
+                        }
+                    ],
+                    "order": null
+                },
+                {
+                    "id": 53,
+                    "created_at": "2024-11-14T01:20:03.516644",
+                    "updated_at": "2024-11-14T01:29:31.601537",
+                    "title": "Quesadilla",
+                    "itemType": "NONVEG",
+                    "subItems": [
+                        {
+                            "id": 54,
+                            "created_at": "2024-11-14T01:25:04.949224",
+                            "updated_at": "2024-11-14T01:25:04.949224",
+                            "name": "Pico de Gallo",
+                            "price": 25,
+                            "quantity": 1,
+                            "description": "Fresh tomato salsa",
+                            "image": "pico.jpg"
+                        }
+                    ],
+                    "order": null
+                }
+            ],
+            "users": []
+        },
+        {
+            "id": 153,
+            "created_at": "2024-11-14T01:31:48.051454",
+            "updated_at": "2024-11-14T01:31:48.051454",
+            "restaurant": {
+                "id": 3,
+                "created_at": "2024-11-14T01:17:55.464838",
+                "updated_at": "2024-11-14T01:17:55.464838",
+                "name": "Sakura Sushi",
+                "address": "101 Tokyo Ln",
+                "phone": "333-444-5555",
+                "email": "hello@sakurasushi.com",
+                "description": "Exquisite Japanese dining",
+                "image": "sakura.jpg",
+                "totalTables": 20,
+                "tables": [],
+                "restaurantStatus": null,
+                "users": []
+            },
+            "item": [
+                {
+                    "id": 54,
+                    "created_at": "2024-11-14T01:20:32.628589",
+                    "updated_at": "2024-11-14T01:31:48.053455",
+                    "title": "Sushi Platter",
+                    "itemType": "VEG",
+                    "subItems": [
+                        {
+                            "id": 55,
+                            "created_at": "2024-11-14T01:25:32.571319",
+                            "updated_at": "2024-11-14T01:25:32.571319",
+                            "name": "Extra Wasabi",
+                            "price": 10,
+                            "quantity": 1,
+                            "description": "Add more wasabi",
+                            "image": "wasabi.jpg"
+                        }
+                    ],
+                    "order": null
+                },
+                {
+                    "id": 55,
+                    "created_at": "2024-11-14T01:21:09.34613",
+                    "updated_at": "2024-11-14T01:31:48.057457",
+                    "title": "Ramen",
+                    "itemType": "NONVEG",
+                    "subItems": [
+                        {
+                            "id": 56,
+                            "created_at": "2024-11-14T01:26:01.595647",
+                            "updated_at": "2024-11-14T01:26:01.595647",
+                            "name": "Soft-Boiled Egg",
+                            "price": 15,
+                            "quantity": 1,
+                            "description": "Additional egg for ramen",
+                            "image": "egg.jpg"
+                        }
+                    ],
+                    "order": null
+                }
+            ],
+            "users": []
+        },
+        {
+            "id": 154,
+            "created_at": "2024-11-14T01:34:06.544135",
+            "updated_at": "2024-11-14T01:34:06.544135",
+            "restaurant": {
+                "id": 4,
+                "created_at": "2024-11-14T01:18:13.568845",
+                "updated_at": "2024-11-14T01:18:13.568845",
+                "name": "Spice of India",
+                "address": "202 Curry Blvd",
+                "phone": "444-555-6666",
+                "email": "contact@spiceofindia.com",
+                "description": "Authentic Indian flavors",
+                "image": "spiceofindia.jpg",
+                "totalTables": 18,
+                "tables": [],
+                "restaurantStatus": null,
+                "users": []
+            },
+            "item": [
+                {
+                    "id": 56,
+                    "created_at": "2024-11-14T01:21:33.235084",
+                    "updated_at": "2024-11-14T01:34:06.546134",
+                    "title": "Butter Chicken",
+                    "itemType": "VEG",
+                    "subItems": [
+                        {
+                            "id": 57,
+                            "created_at": "2024-11-14T01:26:37.77517",
+                            "updated_at": "2024-11-14T01:26:37.77517",
+                            "name": "Naan",
+                            "price": 20,
+                            "quantity": 1,
+                            "description": "Indian flatbread",
+                            "image": "naan.jpg"
+                        }
+                    ],
+                    "order": null
+                },
+                {
+                    "id": 57,
+                    "created_at": "2024-11-14T01:21:52.008294",
+                    "updated_at": "2024-11-14T01:34:06.552142",
+                    "title": "Chole Bhature",
+                    "itemType": "NONVEG",
+                    "subItems": [
+                        {
+                            "id": 58,
+                            "created_at": "2024-11-14T01:27:10.795207",
+                            "updated_at": "2024-11-14T01:27:10.795207",
+                            "name": "Extra Bhature",
+                            "price": 15,
+                            "quantity": 1,
+                            "description": "Fried fluffy bread",
+                            "image": "bhature.jpg"
+                        }
+                    ],
+                    "order": null
+                }
+            ],
+            "users": []
+        },
+        {
+            "id": 155,
+            "created_at": "2024-11-14T01:35:45.210701",
+            "updated_at": "2024-11-14T01:35:45.210701",
+            "restaurant": {
+                "id": 5,
+                "created_at": "2024-11-14T01:18:40.42876",
+                "updated_at": "2024-11-14T01:18:40.42876",
+                "name": "Route 66 Diner",
+                "address": "303 Americana Dr",
+                "phone": "555-666-7777",
+                "email": "contact@route66diner.com",
+                "description": "Classic American Diner",
+                "image": "route66.jpg",
+                "totalTables": 25,
+                "tables": [],
+                "restaurantStatus": null,
+                "users": []
+            },
+            "item": [
+                {
+                    "id": 58,
+                    "created_at": "2024-11-14T01:22:18.990093",
+                    "updated_at": "2024-11-14T01:35:45.211699",
+                    "title": "Burger",
+                    "itemType": "VEG",
+                    "subItems": [
+                        {
+                            "id": 59,
+                            "created_at": "2024-11-14T01:27:45.042655",
+                            "updated_at": "2024-11-14T01:27:45.042655",
+                            "name": "Cheese Slice",
+                            "price": 10,
+                            "quantity": 1,
+                            "description": "Extra cheese slice",
+                            "image": "cheese.jpg"
+                        },
+                        {
+                            "id": 60,
+                            "created_at": "2024-11-14T01:27:58.005884",
+                            "updated_at": "2024-11-14T01:27:58.005884",
+                            "name": "Bacon",
+                            "price": 20,
+                            "quantity": 1,
+                            "description": "Add bacon",
+                            "image": "bacon.jpg"
+                        }
+                    ],
+                    "order": null
+                },
+                {
+                    "id": 59,
+                    "created_at": "2024-11-14T01:22:46.650548",
+                    "updated_at": "2024-11-14T01:35:45.214701",
+                    "title": "Fries",
+                    "itemType": "NONVEG",
+                    "subItems": [
+                        {
+                            "id": 61,
+                            "created_at": "2024-11-14T01:28:20.884016",
+                            "updated_at": "2024-11-14T01:28:20.884016",
+                            "name": "Ketchup",
+                            "price": 5,
+                            "quantity": 1,
+                            "description": "Extra ketchup packet",
+                            "image": "ketchup.jpg"
+                        }
+                    ],
+                    "order": null
+                }
+            ],
+            "users": []
+        }
+    ],
+    "status": "OK",
+    "message": "All items found."
+}

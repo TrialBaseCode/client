@@ -3,20 +3,23 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import SubItem from "../SubItem/SubItem";
 
-function Item() {
+function Item({ item }) {
   return (
     <>
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
+          <Typography gutterBottom variant="h4" component="div">
+            {item.title}
+          </Typography>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {item.itemType}
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Ours {item.title} is best {item.itemType} you liked it please see
+            various type.
           </Typography>
         </CardContent>
-        <SubItem />
+        <SubItem item={item} />
       </Card>
     </>
   );

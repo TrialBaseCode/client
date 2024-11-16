@@ -1,4 +1,3 @@
-import * as React from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -6,9 +5,11 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Checkbox from "@mui/material/Checkbox";
 import Avatar from "@mui/material/Avatar";
+import { useEffect, useState } from "react";
 
-function SubItem() {
-  const [checked, setChecked] = React.useState([1]);
+function SubItem({ item }) {
+  const [checked, setChecked] = useState([]);
+  const [subItem, setSubItem] = useState([]);
 
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
@@ -19,20 +20,28 @@ function SubItem() {
     } else {
       newChecked.splice(currentIndex, 1);
     }
+    console.log(newChecked);
 
     setChecked(newChecked);
   };
+
+  useEffect(() => {
+    setSubItem(item.subItems);
+  }, [item]);
+
   return (
     <>
+      {/* {console.log(subItem)} */}
       <List
         dense
         sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
       >
-        {[0, 1, 2, 3].map((value) => {
+        {subItem.map((value) => {
           const labelId = `checkbox-list-secondary-label-${value}`;
+
           return (
             <ListItem
-              key={value}
+              key={value.id}
               secondaryAction={
                 <Checkbox
                   edge="end"
@@ -46,11 +55,14 @@ function SubItem() {
               <ListItemButton>
                 <ListItemAvatar>
                   <Avatar
-                    alt={`Avatar n°${value + 1}`}
-                    src={`/static/images/avatar/${value + 1}.jpg`}
+                    alt={`Avatar n°${value.id}`}
+                    src={`/static/images/avatar/${value.image}`}
                   />
                 </ListItemAvatar>
-                <ListItemText id={labelId} primary={`Line item ${value + 1}`} />
+                <ListItemText
+                  id={labelId}
+                  primary={`Name: ${value.name} , Price: ${value.price}rs`}
+                />
               </ListItemButton>
             </ListItem>
           );
