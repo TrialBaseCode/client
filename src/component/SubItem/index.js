@@ -1,1 +1,1 @@
-export { defult } from "./SubItem";
+export { default } from "./SubItem";

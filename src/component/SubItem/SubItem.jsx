@@ -13,15 +13,16 @@ function SubItem({ item }) {
 
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+    console.log(currentIndex);
 
+    const newChecked = [...checked];
+    console.log(newChecked);
     if (currentIndex === -1) {
       newChecked.push(value);
     } else {
       newChecked.splice(currentIndex, 1);
     }
     console.log(newChecked);
-
     setChecked(newChecked);
   };
 
@@ -30,45 +31,43 @@ function SubItem({ item }) {
   }, [item]);
 
   return (
-    <>
-      {/* {console.log(subItem)} */}
-      <List
-        dense
-        sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-      >
-        {subItem.map((value) => {
-          const labelId = `checkbox-list-secondary-label-${value}`;
+    <List
+      dense
+      sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+    >
+      {subItem.map((value) => {
+        const labelId = `checkbox-list-secondary-label-${value}`;
 
-          return (
-            <ListItem
-              key={value.id}
-              secondaryAction={
-                <Checkbox
-                  edge="end"
-                  onChange={handleToggle(value)}
-                  checked={checked.includes(value)}
-                  inputProps={{ "aria-labelledby": labelId }}
+        return (
+          <ListItem
+            key={value}
+            secondaryAction={
+              <Checkbox
+                edge="end"
+                onChange={handleToggle(value)}
+                color="success"
+                checked={checked.includes(value)}
+                inputProps={{ "aria-labelledby": labelId }}
+              />
+            }
+            disablePadding
+          >
+            <ListItemButton>
+              <ListItemAvatar>
+                <Avatar
+                  alt={`Avatar n°${value.id}`}
+                  src={`/static/images/avatar/${value.image}`}
                 />
-              }
-              disablePadding
-            >
-              <ListItemButton>
-                <ListItemAvatar>
-                  <Avatar
-                    alt={`Avatar n°${value.id}`}
-                    src={`/static/images/avatar/${value.image}`}
-                  />
-                </ListItemAvatar>
-                <ListItemText
-                  id={labelId}
-                  primary={`Name: ${value.name} , Price: ${value.price}rs`}
-                />
-              </ListItemButton>
-            </ListItem>
-          );
-        })}
-      </List>
-    </>
+              </ListItemAvatar>
+              <ListItemText
+                id={labelId}
+                primary={`Name: ${value.name}, Price: ${value.price}rs`}
+              />
+            </ListItemButton>
+          </ListItem>
+        );
+      })}
+    </List>
   );
 }
 
